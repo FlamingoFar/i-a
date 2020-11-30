@@ -1,0 +1,124 @@
+/** @format */
+body {
+	font-family: "Titillium Web", sans-serif;
+}
+
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #bf99b5;
+	width: 20%;
+
+	z-index: 2;
+}
+
+.header-i-a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #bf99b5;
+	height: 10%;
+}
+
+.create-container {
+	position: absolute;
+	width: 80%;
+	height: 90%;
+	top: 55%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h2 {
+	color: #606060;
+	margin: 1rem 0;
+	text-transform: uppercase;
+}
+
+form input {
+	margin-bottom: 10px;
+	border: none;
+	background-color: #f4f4f4;
+	padding: 1rem 1rem;
+	width: 35vw;
+
+	color: #484848;
+}
+
+form input::placeholder {
+	margin-top: 35px;
+	border: none;
+
+	text-transform: uppercase;
+}
+
+.chooseFile {
+	border: none;
+	border-radius: 2px;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	padding: 0.7rem 1.5rem;
+	cursor: pointer;
+
+	font-size: 1rem;
+	letter-spacing: 0.13rem;
+	background-color: #edc0cc;
+
+	box-shadow: 0rem 0.4rem 0.5rem #edc0cc76;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.create-ct {
+	border: none;
+	border-radius: 2px;
+	margin-top: 1.4rem;
+	margin-bottom: 1rem;
+	padding: 1rem 1.5rem;
+	cursor: pointer;
+
+	font-size: 1rem;
+	letter-spacing: 0.13rem;
+	background-color: #edc0cc;
+
+	box-shadow: 0rem 0.4rem 0.5rem #edc0cc76;
+}
+
+.nationalitet {
+	position: relative;
+	margin-bottom: 10px;
+	border: none;
+	background-color: #f4f4f4;
+	padding: 1rem 1rem;
+	width: 40vw;
+	font-size: 1rem;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 1rem;
+
+	color: #484848;
+}
