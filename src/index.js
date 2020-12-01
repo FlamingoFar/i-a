@@ -1,7 +1,7 @@
 /** @format */
 
 const { app, BrowserWindow } = require("electron");
-require("update-electron-app");
+require("update-electron-app")();
 
 const ipc = require("electron").ipcMain;
 const os = require("os");
