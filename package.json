@@ -19,7 +19,25 @@
 	"license": "MIT",
 	"config": {
 		"forge": {
-			"packagerConfig": {},
+			"packagerConfig": {
+				"Name":"Indretnings Akademiet",
+				"executableName": "indretnings-akademiet",
+				"asar": true,
+				"icon": "/src/assets/icon.icns",
+				"appBundleId": "com.electron.I-A",
+				"osxSign": {
+					"identity": "Developer ID Application: Malte Skjoldager (3FPJL8B6RU)",
+					"hardened-runtime": true,
+          			"entitlements": "entitlements.plist",
+          			"entitlements-inherit": "entitlements.plist",
+          			"signature-flags": "library"
+				},
+				"osxNotarize": {
+					"appleId": "skjoldager1066@gmail.com",
+					"appleIdPassword": "Mia-Maja1066"
+				  }
+
+			},
 			"makers": [
 				{
 					"name": "@electron-forge/maker-squirrel",
@@ -57,5 +75,15 @@
 		"@electron-forge/maker-squirrel": "^6.0.0-beta.54",
 		"@electron-forge/maker-zip": "^6.0.0-beta.54",
 		"electron": "11.0.3"
+	},
+	{
+		"name": '@electron-forge/publisher-github',
+		"config": {
+		  "repository": {
+			"owner": "FlamingoFar",
+			"name": "i-a"
+		  },
+		  "prerelease": "true"
+		}
 	}
 }
